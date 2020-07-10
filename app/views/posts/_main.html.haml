@@ -1,0 +1,5 @@
+.form
+  .seach-form
+    = form_with url: "#" do |form|
+      = form.text_field :content, class: 'seach-text', placeholder: 'type a text'
+      = form.submit 'seach', class: "seach-btn"

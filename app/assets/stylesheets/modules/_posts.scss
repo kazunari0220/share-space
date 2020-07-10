@@ -1,3 +1,92 @@
 * {
   box-sizing: border-box;
 }
+
+.wapper {
+  
+}
+
+.header {
+  background-color: #4e7f92	;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 30px;
+  .left-header {
+    color: #FFF;
+    font-family: cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {      
+    }
+  }
+  .right-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .register {
+      .user-btn {
+        color: #FFF;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        margin: 2em 0;
+        color: #5d627b;
+        background: white;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+        
+      }
+    }
+    .login {
+      margin-left: 5px;
+      .login-btn {      
+        color: #FFF;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        margin: 2em 0;
+        color: #5d627b;
+        background: white;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+      }
+    }
+  }
+}
+.top-image {
+  height: 500px;
+  width: 100%;
+  background-image: url(PCimage.jpg);
+  background-size: contain;
+  background-position:center bottom;
+  background-size: cover;
+  .top-text {
+    font-family: cursive;
+    font-size: 50px;
+    padding: 80px 0 0 80px;
+  }
+  .top-text-2 {
+    padding-left: 100px;
+  }
+}
+.form {
+  text-align: center;
+  background-color: #ddddd4;
+  .seach-text {
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #1d0808;
+    border-radius: 5px;
+  }
+  .seach-btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #464c4d;
+    background: #ECECEC;
+    transition: .4s;
+    padding: 8px;
+    cursor: pointer;
+  }
+}
