@@ -7,7 +7,7 @@
 }
 
 .header {
-  background-color: #4e7f92	;
+  background-color: #4e7f92;
   display: flex;
   justify-content: space-between;
   height: 50px;
@@ -70,7 +70,7 @@
 }
 .form {
   text-align: center;
-  background-color: #ddddd4;
+  background-color: #4e7f92;
   .seach-text {
     padding: 10px;
     margin: 5px 0 15px;
@@ -88,5 +88,51 @@
     transition: .4s;
     padding: 8px;
     cursor: pointer;
+  }
+}
+.content-main {
+  background-color: #f6f6f4;
+  display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  .content-box {
+    height: 80vh;   
+    width: 40vw;
+    overflow: scroll;
+    background-color: white;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;
+    background: #FFF;
+    border: solid 3px #2b4f7e;
+    border-radius: 10px;/*角の丸み*/
+    .content-post {
+      margin-bottom: 5px;
+      border-bottom: double 5px #030303;
+      .post-text {
+        text-decoration: none;
+        .post-title {
+          color: #1d0808;
+          font-size: 30px;     
+        }
+        .name-date-box {
+          display: flex;
+          color: #d0d6d8;
+          font-size: 15px;
+          padding: 5px;
+          .name-box {
+            margin-right: 8px;
+            .post.name {          
+            }
+          }
+          .date-box {        
+            .post.date {        
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -3,3 +3,17 @@
     = form_with url: "#" do |form|
       = form.text_field :content, class: 'seach-text', placeholder: 'type a text'
       = form.submit 'seach', class: "seach-btn"
+.content-main
+  .content-box
+    - @posts.each do |post|
+      .content-post
+        = link_to "#", class: "post-text" do
+          .post-title
+            = post.title
+          .name-date-box
+            .name-box
+              .post-name
+                = post.name
+            .name-date
+              .post-date
+                = post.created_at.strftime("%Y年%m月%d日 %H時%M分")
