@@ -13,13 +13,14 @@
   height: 50px;
   padding: 0 30px;
   .left-header {
-    color: #FFF;
     font-family: cursive;
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    .title {      
+    .title {
+      text-decoration: none;
+      color: #FFF;
     }
   }
   .right-header {
@@ -53,7 +54,7 @@
   }
 }
 .top-image {
-  height: 500px;
+  height: 400px;
   width: 100%;
   background-image: url(PCimage.jpg);
   background-size: contain;
@@ -73,29 +74,38 @@
   background-color: #4e7f92;
   .seach-text {
     padding: 10px;
-    margin: 5px 0 15px;
+    margin: 5px 0 5px;
     border: 1px solid #1d0808;
     border-radius: 5px;
   }
   .seach-btn {
-    position: relative;
     display: inline-block;
-    font-weight: bold;
-    padding: 0.25em 0.5em;
-    text-decoration: none;
-    color: #464c4d;
-    background: #ECECEC;
-    transition: .4s;
-    padding: 8px;
-    cursor: pointer;
+          padding: 0.5em 1em;
+          text-decoration: none;
+          background: white;/*ボタン色*/
+          color: black;/*ボタン色と同じに*/
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+          border-bottom: solid 3px #627295;
+          border-radius: 3px;/*角の丸み*/
+          font-weight: bold;
+          text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+          padding: 8px;
+          cursor: pointer;
+  }
+  .seach-btn:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
   }
 }
 .content-main {
   background-color: #f6f6f4;
   display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
-    align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
   .content-box {
     height: 80vh;   
     width: 40vw;
@@ -134,5 +144,16 @@
         }
       }
     }
+  }
+}
+.footer {
+  height: 50px;
+  background-color: #f6f6f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .footer-text {
+    font-size: 20px;
+    font-family: cursive;
   }
 }

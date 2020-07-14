@@ -8,4 +8,35 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    = render 'layouts/notifications'
+    .header
+      .left-header
+        = link_to "/posts", class: "title" do
+          ShareSpace
+      .right-header
+        - if user_signed_in?
+          .register
+            = link_to "/users/:id/edit", class: "user-btn" do
+              = current_user.name
+          .register
+            = link_to "#", class: "user-btn" do
+              マイページ
+          .login
+            = link_to "#", class: "login-btn" do
+              投稿
+        - else
+          .register
+            = link_to "/users/sign_up", class: "user-btn" do
+              Sign up
+          .login
+            = link_to " /users/sign_in", class: "login-btn" do
+              Login
+    .top-image
+      .top-text
+        Welcome to ShareSpace
+      .top-text-2
+        エンジニアリングに関する知識を投稿してアウトプットしよう
     = yield
+    .footer
+      .footer-text
+        ShareSpace
