@@ -8,8 +8,21 @@ class PostsController < ApplicationController
   end
 
   def create
-    # @post = Post.new(post_params)
-    @post = Post.create(post_params)
+    Post.create(post_params)
+  end
+
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
+  end
+
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    post = Post.find(params[:id])
+    post.update(post_params)
   end
 
   def show
@@ -18,7 +31,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :text)
+    params.require(:post).permit(:title, :text).merge(user_id: current_user.id, user_name: current_user.name)
   end
 
 end
