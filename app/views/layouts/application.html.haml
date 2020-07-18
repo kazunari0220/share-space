@@ -19,7 +19,7 @@
             = link_to "/users/:id/edit", class: "user-btn" do
               = current_user.name
           .register
-            = link_to "#", class: "user-btn" do
+            = link_to "/users/#{current_user.id}", class: "user-btn" do
               マイページ
           .login
             = link_to "/posts/new", class: "login-btn" do

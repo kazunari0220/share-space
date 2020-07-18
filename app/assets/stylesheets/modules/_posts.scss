@@ -104,15 +104,20 @@
   background-color: #f6f6f4;
   display: flex;
   justify-content: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
+  .post-list-name {
+    font-size: 20px;
+    margin-top: 5px;
+    color: rgb(173, 165, 165);
+  }
   .content-box {
-    height: 80vh;   
+    height: 75vh;   
     width: 40vw;
     overflow: scroll;
     background-color: white;
     padding: 0.5em 1em;
-    margin: 2em 0;
+    margin: 15px;
     font-weight: bold;
     color: #6091d3;
     background: #FFF;

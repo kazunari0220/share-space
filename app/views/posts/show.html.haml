@@ -22,3 +22,26 @@
     .show-text-box
       .show-text
         = @post.text
+  .content-main
+    .content-box
+      .container
+        - if current_user
+          = form_with(model: [@post, @comment], local: true,) do |form|
+            .comment-text-btn
+              = form.text_area :text, placeholder: "コメントする", rows: "2", class: "comment-text"
+              = form.submit "SEND", class: "comment-btn"
+        - else
+          %p
+            ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
+      .comments 
+        %h1
+          <コメント一覧>
+          - if @comments
+            - @comments.each do |comment|
+              .comment-name-text-2
+                %p
+                  = link_to comment.user.name, "/users/#{comment.user_id}", class: "comment-name"
+                %p
+                  ：
+                %p
+                  = comment.text

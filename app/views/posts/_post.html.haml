@@ -1,0 +1,29 @@
+.form
+  .seach-form
+    = form_with url: search_posts_path, local: true, method: :get do |form|
+      = form.text_field :keyword, class: 'seach-text', placeholder: 'type a text'
+      = form.submit 'seach', class: "seach-btn"
+.content-main
+  .content-box
+    - @posts.each do |post|
+      .content-post
+        .content-title-icon
+          = link_to post_path(post.id), method: :get, class: "post-text" do
+            = post.title
+          .icon-btn
+            %ul.icon-text
+              %li
+                = link_to post_path(post.id), method: :get, class: "icon-text-2" do
+                  詳細
+                - if user_signed_in? && current_user.id == post.user_id
+                  %li
+                    = link_to edit_post_path(post.id), method: :get, class: "icon-text-2" do
+                      編集
+                      %li
+                        = link_to post_path(post.id), method: :delete, class: "icon-text-2" do
+                          削除
+        .name-date-box
+          .post-name
+            = post.user_name
+          .post-date
+            = post.created_at.strftime("%Y年%m月%d日 %H時%M分")

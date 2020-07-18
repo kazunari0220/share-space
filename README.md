@@ -25,5 +25,5 @@
 |user_id|integer|null: false, foreign_key: true|
 |tweet_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :posts
+- belongs_to :post
 - belongs_to :user
