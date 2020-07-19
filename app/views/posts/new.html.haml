@@ -1,0 +1,7 @@
+.new-contents
+  .new-container
+    = form_with model: @post, local: true, class: "new-all" do |form|
+      = form.text_field :title, placeholder: "タイトル", class: "new-title", maxlength: "10"
+      = form.text_area :text, placeholder: "プログラミングに関する知識を書いてアウトプットしよう", class: "new-text"
+      .new-btn-box
+        = form.submit "ShareSpaceに投稿", class: "new-btn"

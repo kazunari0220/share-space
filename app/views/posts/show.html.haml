@@ -1,0 +1,47 @@
+.content-main-2
+  .content-box-2
+    .content-post-2
+      .content-title-icon-2
+        .post-text-2
+          = @post.title
+        .name-date-box-2
+          .post-name-2
+            = @post.user_name
+          .post-date-2
+            = @post.created_at.strftime("%Y年%m月%d日 %H時%M分")
+            .icon-btn-2
+              %ul.icon-text-2
+                - if user_signed_in? && current_user.id == @post.user_id
+                  %li
+                    = link_to edit_post_path(@post.id), method: :get, class: "icon-text-2-2" do
+                      編集
+                      %li
+                        = link_to post_path(@post.id), method: :delete, class: "icon-text-2-2" do
+                          削除
+            
+    .show-text-box
+      .show-text
+        = @post.text
+  .content-main
+    .content-box
+      .container
+        - if current_user
+          = form_with(model: [@post, @comment], local: true,) do |form|
+            .comment-text-btn
+              = form.text_area :text, placeholder: "コメントする", rows: "2", class: "comment-text"
+              = form.submit "SEND", class: "comment-btn"
+        - else
+          %p
+            ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
+      .comments 
+        %h1
+          <コメント一覧>
+          - if @comments
+            - @comments.each do |comment|
+              .comment-name-text-2
+                %p
+                  = link_to comment.user.name, "/users/#{comment.user_id}", class: "comment-name"
+                %p
+                  ：
+                %p
+                  = comment.text

@@ -1,0 +1,67 @@
+.new-contents-2 {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f4;
+    .new-edit {
+      text-align: center;
+      margin-bottom: 10px;
+      .edit {
+        font-size: 30px;
+        color: #fff;
+        text-shadow: 1px 1px 1px #668ad8, -1px 1px 1px #668ad8, 1px -1px 1px #668ad8, -1px -1px 1px #668ad8, 1px 1px 1px #668ad8, -1px 1px 1px #668ad8, 1px -1px 1px #668ad8, -1px -1px 1px #668ad8;
+      }
+    }
+  .new-container-2 {
+    margin-top: 30px;
+    width: 50vw;
+    margin-bottom: 5%;
+    overflow: scroll;
+    .new-all-2 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .new-title-2 {
+        font-size: 20px;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        font-weight: bold;
+        background: #FFF;
+        border: solid 3px #2b4f7e;
+        border-radius: 10px;/*角の丸み*/
+      }
+      .new-text-2 {
+        padding-bottom: 60%;
+        margin-bottom: 10px;
+        font-weight: bold;
+        background: #FFF;
+        border: solid 3px #2b4f7e;
+        border-radius: 10px;/*角の丸み*/
+      }
+      .new-btn-box-2 {
+        .new-btn-2 {
+          cursor: pointer;
+          margin-right: 5px;
+          float: right;
+          font-family: cursive;
+          display: inline-block;
+          padding: 0.5em 1em;
+          text-decoration: none;
+          background: white;/*ボタン色*/
+          color: #668ad8;/*ボタン色と同じに*/
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+          border-bottom: solid 3px #627295;
+          border-radius: 3px;/*角の丸み*/
+          font-weight: bold;
+          text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+        }
+        .new-btn-2:active {
+          /*ボタンを押したとき*/
+          -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
