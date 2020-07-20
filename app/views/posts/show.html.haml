@@ -26,7 +26,7 @@
     .content-box
       .container
         - if current_user
-          = form_with(model: [@post, @comment], local: true,) do |form|
+          = form_with(model: [@post, @comment], local: true, id: "new-comment") do |form|
             .comment-text-btn
               = form.text_area :text, placeholder: "コメントする", rows: "2", class: "comment-text"
               = form.submit "SEND", class: "comment-btn"
