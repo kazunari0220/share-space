@@ -6,7 +6,8 @@
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application'
+    -# = javascript_pack_tag 'aplication', 'data-turbolinks-track': 'reload'
   %body
     = render 'layouts/notifications'
     .header
@@ -32,7 +33,7 @@
             = link_to " /users/sign_in", class: "login-btn" do
               Login
     .top-image
-      .top-text
+      %p.top-text
         Welcome to ShareSpace
       .top-text-2
         エンジニアリングに関する知識を投稿してアウトプットしよう
