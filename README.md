@@ -1,3 +1,5 @@
+# README
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -11,9 +13,10 @@
 ## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|title|text||
-|text|text||
+|title|text|null: false|
+|text|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
+|user_name|string|
 ### Association
 - belongs_to :user
 - has_many :comments
@@ -22,8 +25,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|tweet_id|integer|null: false, foreign_key: true|
+|user_id|integer|foreign_key: true|
+|post_id|integer|foreign_key: true|
 ### Association
 - belongs_to :post
 - belongs_to :user
