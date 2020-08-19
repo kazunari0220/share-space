@@ -30,3 +30,5 @@
 ### Association
 - belongs_to :post
 - belongs_to :user
+
+![image](https://github.com/kazunari0220/share-space/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-08-20%201.00.44.png = 250x250)
