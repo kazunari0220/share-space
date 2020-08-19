@@ -33,8 +33,8 @@
 
 # トップページ& 検索機能
 ![トップページ](https://github.com/kazunari0220/share-space/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-08-20%201.00.44.png)
-・whereメソッドとLIKE句を使用して検索できます。
-・JavaScriptで動きを付けています。
+・whereメソッドとLIKE句を使用して検索できます。<br>
+・JavaScriptで動きを付けています。<br>
 ・自分の投稿と他のユーザーの投稿が見れます。
 
 # 詳細&コメント
@@ -43,7 +43,7 @@
 
 # アカウント作成
 ![アカウント作成](https://github.com/kazunari0220/share-space/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-08-20%201.01.33.png)
-deviceを用いています。
+・deviceを用いています。
 
 # マイページ
 ![マイページ](https://github.com/kazunari0220/share-space/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-08-20%201.02.30.png)
