@@ -1,6 +1,6 @@
 # README
 
-- URL:https://share-space0220.herokuapp.com/posts
+- URL:https://share-space0220.herokuapp.com/
 
 ## 確認用ログインアカウント
 - NAME:  test name<br>
