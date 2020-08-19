@@ -1,5 +1,11 @@
 # README
 
+- URL:https://share-space0220.herokuapp.com/posts
+
+- NAME:  test name<br>
+- EMAIL: share-space@gmail.com<br>
+- PASS:  sharespace
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
