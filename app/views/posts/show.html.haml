@@ -40,7 +40,8 @@
             - @comments.each do |comment|
               .comment-name-text-2
                 %p
-                  = link_to comment.user.name, "/users/#{comment.user_id}", class: "comment-name"
+                  .comment-name
+                    = comment.user.name
                 %p
                   ：
                 %p
